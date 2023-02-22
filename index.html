@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Farmácia Melhor Preço</title>
+
+</head>
+
+<body>
+    
+    <div class="logo">
+        <img src="/img/logo.png" alt="Logo">
+
+        <ul class="menu">
+
+            <li><a href="#">Início</a></li>
+            <li><a href="#" onclick="openDialog()">Quem somos</a></li>
+            <li><a href="#">Lojas</a></li>
+            <li><a href="#">Contato</a></li>
+
+        </ul>
+
+    </div>
+
+    <dialog id="dialogo1">
+        <h1>Rede de Farmácia Melhor Preço</h1>
+        <p>Estou testando o Dialogo.</p>
+        <button onclick="closeDialog()">Fechar</button>
+    </dialog>
+
+    <script>
+        function openDialog() {
+            document.getElementById("dialogo1").showModal();
+        }
+
+        function closeDialog() {
+            document.getElementById("dialogo1").close();
+        }
+    </script>
+
+    <script src="/js/meuscript.js"></script>
+</body>
+
+</html>
